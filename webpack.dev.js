@@ -8,7 +8,7 @@ module.exports = merge(common, {
     static: "./src",
     client: {
       overlay: true,
-      progress: false,//
+      progress: false,
     },
   },
 });
