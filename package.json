@@ -1,6 +1,9 @@
 {
   "name": "restaurant-page",
-  "sideEffects": true,
+  "sideEffects": [
+    "./src/modules/initialPageSetup.js",
+    "*.css"
+  ],
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
