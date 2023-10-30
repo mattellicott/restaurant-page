@@ -1,0 +1,10 @@
+{
+  "logoText": "Burger World",
+  "copyrighter": "Matt Ellicott",
+  "menuTabs": ["Home", "Menu", "Contact"],
+  "fontList": ["Caveat"],
+  "images": {
+    "bodyBackground": "./assets/bodyBackground.jpg",
+    "chef": "./assets/chef.jpg"
+  }
+}
