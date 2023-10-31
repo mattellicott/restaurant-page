@@ -1,10 +1,55 @@
 {
-  "logoText": "Burger World",
+  "fontList": { "headerLogo": "Caveat", "homeLogo": "Caveat" },
   "copyrighter": "Matt Ellicott",
+  "headerLogoText": "Burger World",
   "menuTabs": ["Home", "Menu", "Contact"],
-  "fontList": ["Caveat"],
-  "images": {
-    "bodyBackground": "./assets/bodyBackground.jpg",
-    "chef": "./assets/chef.jpg"
+  "homeLogoText": "BW",
+  "homeSloganText": "Burgers are <strong>OUR</strong> world. Why not make 'em <strong>YOURS</strong> too?",
+  "contactText": [
+    "We are located on planet Lorem, in the Ipsum system, in a galaxy far, far away."
+  ],
+  "backgroundImage": "backgroundImage.jpg",
+  "contactImage": "galaxy.jpg",
+  "menuItems": {
+    "item1": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger1.jpg"
+    },
+    "item2": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger2.jpg"
+    },
+    "item3": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger3.jpg"
+    },
+    "item4": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger4.jpg"
+    },
+    "item5": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger5.jpg"
+    },
+    "item6": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger6.jpg"
+    },
+    "item7": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger7.jpg"
+    },
+    "item8": {
+      "name": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo libero, ullamcorper sed urna a, commodo tempor risus. Morbi sit amet felis lectus. Nullam purus tellus, venenatis quis porta vel, luctus vitae nisi.",
+      "imageLocation": "menuitems/burger8.jpg"
+    }
   }
 }
