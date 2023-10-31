@@ -1,5 +1,3 @@
-import siteData from "./siteData.json";
-
 function importAll(r) {
   const images = {};
 

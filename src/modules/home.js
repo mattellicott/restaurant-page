@@ -1,5 +1,5 @@
 import { makeElement, addGoogleFontTo } from "./functions";
-import siteData from "./siteData.json";
+import siteData from "../data/siteData.json";
 
 class Home {
   constructor(data) {

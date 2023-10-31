@@ -1,6 +1,6 @@
 import { makeElement } from "./functions";
-import { images } from "./assets";
-import siteData from "./siteData.json";
+import { images } from "./images";
+import siteData from "../data/siteData.json";
 
 class Menu {
   constructor(menuItems, images) {

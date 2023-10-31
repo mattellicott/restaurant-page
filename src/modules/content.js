@@ -1,9 +1,9 @@
 import { makeElement, addGoogleFontTo } from "./functions";
-import { images } from "./assets";
+import { images } from "./images";
 import { home } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
-import siteData from "./siteData.json";
+import siteData from "../data/siteData.json";
 
 class Content {
   constructor(data, backgroundImage) {
