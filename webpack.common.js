@@ -21,8 +21,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Restaurant Page",
-      // favicon: "./src/assets/favicon.ico",
+      title: "Burger World",
     }),
     new FaviconsWebpackPlugin({
       logo: "./src/assets/favicon.png",
