@@ -1,12 +1,14 @@
-import { makeElement } from "./functions";
+import { makeElement, addGoogleFontTo } from "./functions";
+import { images } from "./assets";
 import { home } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
 import siteData from "./siteData.json";
 
 class Content {
-  constructor(data) {
+  constructor(data, backgroundImage) {
     this.data = data;
+    this.backgroundImage = backgroundImage;
     this.mainPages = { home, menu, contact };
     this.currentMainPage = this.mainPages.home.page;
     this.menuTabElements = [];
@@ -20,6 +22,7 @@ class Content {
   createContent() {
     const wrapperElement = makeElement("div", "id", "content");
 
+    wrapperElement.style.backgroundImage = `url(${this.backgroundImage})`;
     wrapperElement.appendChild(this.header);
     wrapperElement.appendChild(this.main);
     wrapperElement.appendChild(this.footer);
@@ -37,7 +40,13 @@ class Content {
   }
 
   createHeaderLogo() {
-    const logoElement = makeElement("div", "id", "logo", this.data.logoText);
+    const logoElement = makeElement(
+      "div",
+      "id",
+      "headerLogo",
+      this.data.headerLogoText,
+    );
+    addGoogleFontTo(logoElement, this.data.fontList.headerLogo);
 
     return logoElement;
   }
@@ -86,4 +95,4 @@ class Content {
   }
 }
 
-export const website = new Content(siteData);
+export const website = new Content(siteData, images[siteData.backgroundImage]);

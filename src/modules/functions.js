@@ -1,13 +1,13 @@
-export function addGoogleFontLinks(fontList) {
-  for (const fontName of fontList) {
-    const link = document.createElement("link");
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute(
-      "href",
-      "https://fonts.googleapis.com/css?family=" + fontName,
-    );
-    document.head.appendChild(link);
-  }
+export function addGoogleFontTo(element, fontName) {
+  const link = document.createElement("link");
+  link.setAttribute("rel", "stylesheet");
+  link.setAttribute(
+    "href",
+    "https://fonts.googleapis.com/css?family=" + fontName,
+  );
+
+  document.head.appendChild(link);
+  element.style.fontFamily = fontName;
 }
 
 export function makeElement(tagType, nameType, nameList, text) {

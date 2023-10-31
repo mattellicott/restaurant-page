@@ -1,19 +1,34 @@
-import { makeElement } from "./functions";
+import { makeElement, addGoogleFontTo } from "./functions";
 import siteData from "./siteData.json";
 
 class Home {
-  constructor() {
+  constructor(data) {
+    this.data = data;
     this.page = this.makePage();
   }
 
   makePage() {
     const wrapperElement = makeElement("div", "id", "homePage");
-    const image = makeElement("img", "id", "chefImage");
+    const logoElement = makeElement(
+      "div",
+      "id",
+      "homeLogo",
+      this.data.homeLogoText,
+    );
+    const textElement = makeElement(
+      "div",
+      "id",
+      "homeSlogan",
+      this.data.homeSloganText,
+    );
 
-    wrapperElement.appendChild(image);
+    addGoogleFontTo(logoElement, this.data.fontList.headerLogo);
+
+    wrapperElement.appendChild(logoElement);
+    wrapperElement.appendChild(textElement);
 
     return wrapperElement;
   }
 }
 
-export const home = new Home();
+export const home = new Home(siteData);
